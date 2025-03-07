@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        let n = Math.round(Math.random() * 100);
+        function a(e) {
+            if (e.key === "Enter") {
+                document.write(e.target.value == n ? `Parabéns! ${n}` : `Você perdeu! ${n}`);
+            }
+        }
+    </script>
+</head>
+<body>
+    <input onkeydown="a(event)">
+</body>
+</html>
